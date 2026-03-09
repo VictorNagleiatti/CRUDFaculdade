@@ -1,0 +1,52 @@
+﻿@page "{id:int}"
+@model CrudFaculdade.Web.Pages.Produtos.EditModel
+
+<div class="d-flex align-items-center justify-content-between mb-3">
+    <div>
+        <h2 class="mb-1">Editar Produto</h2>
+        <div class="text-muted small">Atualize as informações</div>
+    </div>
+    <a class="btn btn-outline-secondary" asp-page="Index">Voltar</a>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <form method="post">
+            <input type="hidden" asp-for="Produto.Id" />
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label" asp-for="Produto.Nome"></label>
+                    <input class="form-control" asp-for="Produto.Nome" />
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label" asp-for="Produto.Preco"></label>
+                    <input class="form-control" asp-for="Produto.Preco" />
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label" asp-for="Produto.Estoque"></label>
+                    <input class="form-control" asp-for="Produto.Estoque" />
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" asp-for="Produto.Categoria"></label>
+                    <input class="form-control" asp-for="Produto.Categoria" />
+                </div>
+
+                <div class="col-md-6 d-flex align-items-end">
+                    <div class="form-check">
+                        <input class="form-check-input" asp-for="Produto.Ativo" />
+                        <label class="form-check-label" asp-for="Produto.Ativo">Ativo</label>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex gap-2 mt-2">
+                    <button class="btn btn-success" type="submit">Salvar Alterações</button>
+                    <a class="btn btn-secondary" asp-page="Index">Cancelar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
