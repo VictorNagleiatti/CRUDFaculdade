@@ -1,0 +1,88 @@
+# =========================
+# Visual Studio / Rider / VS Code
+# =========================
+.vs/
+.idea/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Build outputs
+# =========================
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+
+# =========================
+# Test results
+# =========================
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# =========================
+# NuGet
+# =========================
+packages/
+*.nupkg
+*.snupkg
+**/packages.lock.json
+.nuget/NuGet.Config
+
+# =========================
+# ASP.NET Core
+# =========================
+appsettings.*.json
+!appsettings.json
+
+# (Opcional) se você usa User Secrets e não quer vazar config local
+secrets.json
+
+# =========================
+# Publish
+# =========================
+**/publish/
+**/PublishProfiles/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS / misc
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# =========================
+# EF / DB (se você gerar arquivos locais)
+# =========================
+*.mdf
+*.ldf
+
+# =========================
+# Node (se algum dia usar front com node)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Others
+# =========================
+*.swp
+*.tmp
+*.temp
+*.bak
