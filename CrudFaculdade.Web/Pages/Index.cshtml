@@ -1,10 +1,89 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row align-items-center g-4">
+    <div class="col-lg-7">
+        <div class="p-4 p-md-5 bg-white rounded-4 shadow-sm border">
+            <span class="badge bg-primary-subtle text-primary-emphasis px-3 py-2 rounded-pill">
+                Projeto de Faculdade
+            </span>
+
+            <h1 class="mt-3 mb-2 fw-bold" style="letter-spacing:-0.6px;">
+                CrudFaculdade — Controle de Produtos
+            </h1>
+
+            <p class="text-muted mb-4">
+                CRUD completo (Create, Read, Update, Delete) com <strong>ASP.NET Core Web API</strong>,
+                <strong>SQL Server</strong> e <strong>Razor Pages</strong>.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-lg" asp-page="/Produtos/Index">
+                    Ir para Produtos
+                </a>
+                <a class="btn btn-outline-secondary btn-lg" asp-page="/Produtos/Create">
+                    + Novo Produto
+                </a>
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="p-3 rounded-3 border bg-light">
+                        <div class="fw-semibold">Backend</div>
+                        <div class="text-muted small">ASP.NET Core Web API</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 rounded-3 border bg-light">
+                        <div class="fw-semibold">Banco</div>
+                        <div class="text-muted small">SQL Server (SSMS)</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 rounded-3 border bg-light">
+                        <div class="fw-semibold">Front-end</div>
+                        <div class="text-muted small">Razor Pages</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-5">
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+                <h5 class="fw-semibold mb-3">O que você consegue fazer?</h5>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Criar produtos
+                        <span class="badge bg-success text-white">CREATE</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Listar e pesquisar
+                        <span class="badge bg-primary text-white">READ</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Editar informações
+                        <span class="badge bg-warning text-dark">UPDATE</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Excluir com confirmação
+                        <span class="badge bg-danger text-white">DELETE</span>
+                    </li>
+                </ul>
+
+                <div class="mt-4">
+                    <small class="text-muted">
+                        Dica: use o menu superior para navegar entre as páginas.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
